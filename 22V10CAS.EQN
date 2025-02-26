@@ -33,13 +33,13 @@ CAS1H.oe = TSEN2
 CAS1L.oe = TSEN2
 	
 /CAS0H = /CASH * /C2M * /ROWS
-	+ /CASH * /C2M * /VID * /A21
-	+ /CASH * /C2M * /VID * /RAMSIZE * /A19 * /A20
+	+ /CASH * /C2M * /VID * RAMSIZE * /A21
+	+ /CASH * /C2M * /VID * /RAMSIZE * /A19 * /A20 * /A21
 CAS0H.oe = TSEN2
 
 /CAS0L = /CASL * /C2M * /ROWS
-	+ /CASL * /C2M * /VID * /A21
-	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * /A20
+	+ /CASL * /C2M * /VID * RAMSIZE * /A21
+	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * /A20 * /A21
 CAS0L.oe = TSEN2
 
 /OVERLAY = gnd
