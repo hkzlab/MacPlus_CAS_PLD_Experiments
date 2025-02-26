@@ -24,14 +24,12 @@ SCSI.oe = TSEN2
     + /C2M * VID * /CASH * ROWS
     + /C2M * VID * /CASH * /RAMSIZE
     + A21 * /C2M * /CASH * RAMSIZE * ROWS
-    + /CASH
 CAS1H.oe = TSEN2
 
 /CAS1L = /CASL
     + /C2M * VID * /CASL * ROWS
     + /C2M * VID * /CASL * /RAMSIZE
     + A21 * /C2M * /CASL * RAMSIZE * ROWS
-    + /CASL
 CAS1L.oe = TSEN2
 	
 /CAS0H = /CASH * /C2M * /ROWS
