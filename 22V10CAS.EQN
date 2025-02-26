@@ -22,20 +22,24 @@ SCSI.oe = TSEN2
 
 /CAS1H = /C2M * VID * /CASH * ROWS
     + A21 * /C2M * /CASH * RAMSIZE * ROWS
+	+ A20 * /C2M * /CASH * /RAMSIZE * ROWS
+	+ A19 * /C2M * /CASH * /RAMSIZE * ROWS
 CAS1H.oe = TSEN2
 
 /CAS1L = /C2M * VID * /CASL * ROWS
     + A21 * /C2M * /CASL * RAMSIZE * ROWS
+	+ A20 * /C2M * /CASL * /RAMSIZE * ROWS
+	+ A19 * /C2M * /CASL * /RAMSIZE * ROWS
 CAS1L.oe = TSEN2
 	
 /CAS0H = /CASH * /C2M * /ROWS
 	+ /CASH * /C2M * /VID * /A21
-	+ /CASH * /C2M * /VID * /RAMSIZE * A21
+	+ /CASH * /C2M * /VID * /RAMSIZE * /A19 * /A20
 CAS0H.oe = TSEN2
 
 /CAS0L = /CASL * /C2M * /ROWS
 	+ /CASL * /C2M * /VID * /A21
-	+ /CASL * /C2M * /VID * /RAMSIZE * A21
+	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * /A20
 CAS0L.oe = TSEN2
 
 /OVERLAY = gnd
