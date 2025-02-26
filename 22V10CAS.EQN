@@ -21,12 +21,12 @@ DACK.oe = TSEN2
 SCSI.oe = TSEN2
 
 /CAS1H = /C2M * VID * /CASH * ROWS
-    + /C2M * VID * /CASH * /RAMSIZE
+    + /C2M * VID * /CASH * /RAMSIZE * ROWS
     + A21 * /C2M * /CASH * RAMSIZE * ROWS
 CAS1H.oe = TSEN2
 
 /CAS1L = /C2M * VID * /CASL * ROWS
-    + /C2M * VID * /CASL * /RAMSIZE
+    + /C2M * VID * /CASL * /RAMSIZE * ROWS
     + A21 * /C2M * /CASL * RAMSIZE * ROWS
 CAS1L.oe = TSEN2
 	
