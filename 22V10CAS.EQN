@@ -12,11 +12,9 @@ CAS0H=18 CAS1L=19 CAS1H=20 SCSI=21 DACK=22 AS=23 VCC=24
 
 equations
 
-
-/AS = gnd
-AS.oe = gnd
 /DACK = A9 * /AS * A19 * A20 * /A21 * A22 * /A23
 DACK.oe = TSEN2
+
 /SCSI = /A9 * /AS * A19 * A20 * /A21 * A22 * /A23
 SCSI.oe = TSEN2
 
@@ -44,10 +42,7 @@ CAS0H.oe = TSEN2
 	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * /A20 * /A21
 CAS0L.oe = TSEN2
 
-/OVERLAY = gnd
-OVERLAY.oe = gnd
 /ROMCE = /A20 * /A21 * A22 * /A23
     + /A20 * /A21 * /A23 * OVERLAY
 ROMCE.oe = TSEN2
-/RAMSIZE = gnd
-RAMSIZE.oe = gnd
+
