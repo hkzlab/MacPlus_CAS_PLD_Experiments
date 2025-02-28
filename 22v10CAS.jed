@@ -2,7 +2,7 @@
 GAL22V10
 EQN2JED - Boolean Equations to JEDEC file assembler (Version V101)
 Copyright (c) National Semiconductor Corporation 1990-1993
-Assembled from "22V10CAS.EQN". Date: 2-27-125
+Assembled from "22V10CAS.EQN". Date: 2-28-125
 *
 NOTE PINS A9:1 A19:2 A20:3 A21:4 A22:5 A23:6 C2M:7 VID:8 CASL:9*
 NOTE PINS CASH:10 ROWS:11 GND:12 /TSEN2:13 RAMSIZE:14 ROMCE:15*
