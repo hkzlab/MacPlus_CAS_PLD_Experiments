@@ -19,32 +19,30 @@ DACK.oe = TSEN2
 SCSI.oe = TSEN2
 
 /CAS1H = /CAS1H * /CASH
-	+ /C2M * VID * /CASH * ROWS
-	+ A21 * /C2M * /CASH * ROWS
-	+ A20 * /C2M * /CASH * /RAMSIZE * ROWS
-	+ A19 * /C2M * /CASH * /RAMSIZE * ROWS
+	+ VID * /C2M * /CASH * ROWS
+	+ A21 * /VID * /C2M * /CASH * RAMSIZE * ROWS
+	+ A19 * /VID * /C2M * /CASH * /RAMSIZE * ROWS
 CAS1H.oe = TSEN2
 
 /CAS1L = /CAS1L * /CASL
-	+ /C2M * VID * /CASL * ROWS
-	+ A21 * /C2M * /CASL * ROWS
-	+ A20 * /C2M * /CASL * /RAMSIZE * ROWS
-	+ A19 * /C2M * /CASL * /RAMSIZE * ROWS
+	+ VID * /C2M * /CASL * ROWS
+	+ A21 * /VID * /C2M * /CASL * RAMSIZE * ROWS
+	+ A19 * /VID * /C2M * /CASL * /RAMSIZE * ROWS
 CAS1L.oe = TSEN2
 	
 /CAS0H = /CAS0H * /CASH
 	+ /CASH * /C2M * /ROWS
-	+ /CASH * /C2M * /VID * RAMSIZE * /A21
-	+ /CASH * /C2M * /VID * /RAMSIZE * /A19 * /A20 * /A21
+	+ /CASH * /C2M * /VID * RAMSIZE * /A21 * ROWS
+	+ /CASH * /C2M * /VID * /RAMSIZE * /A19 * ROWS
 CAS0H.oe = TSEN2
 
 /CAS0L = /CAS0L * /CASL
 	+ /CASL * /C2M * /ROWS
-	+ /CASL * /C2M * /VID * RAMSIZE * /A21
-	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * /A20 * /A21
+	+ /CASL * /C2M * /VID * RAMSIZE * /A21 * ROWS
+	+ /CASL * /C2M * /VID * /RAMSIZE * /A19 * ROWS
 CAS0L.oe = TSEN2
 
 /ROMCE = /A20 * /A21 * A22 * /A23
-    + /A20 * /A21 * /A23 * OVERLAY
+	+ /A20 * /A21 * /A23 * OVERLAY
 ROMCE.oe = TSEN2
 
