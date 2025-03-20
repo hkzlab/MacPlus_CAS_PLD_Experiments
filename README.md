@@ -6,10 +6,9 @@
 
 As far as I know, the dumps for the CAS PLD (a PAL 20L8) on the Macintosh Plus that are floating around the net are problematic with some memory configurations.
 
-I fiddled with the equations without having an PLD on hand, to try and get all the memory configurations working (4x 256KB, 2x 1MB, 2x 1MB + 2x 256KB, 4x 1MB).
+I fiddled with the equations without having an PLD on hand, to try and get all the memory configurations working (4x 256KB, 2x 1MB, 2x 1MB + 2x 256KB, 4x 1MB),
+I then got hold of an original Macintosh Plus motherboard, desoldered the CAS IC and manually checked the behavior of CAS lines.
 
-The JEDs with filename ending in 'D' are working fine on my Mac Plus clone, are found to be working fine on another clone and on an original machine, but seems to be crashing a machine using the UNITRON ROMs.
+The JEDs found in this repository are the current result of such work. They are working fine for me in a Macintosh Plus clone, with all supported memory configurations, using both original ROMs and UNITRON ROMs.
 
-As such, if you try these JEDs, please report back how they work for you!
-
-In the meantime, I'm waiting for an original Plus motherboard to arrive so I can compare the behavior of the original PLD with the equations found in the ones from this repo.
+Testing by others is pending.
